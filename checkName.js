@@ -3,7 +3,7 @@ function checkName(name) {
     let inputToLower = name.toLowerCase();
     let inputName = inputToLower[inputToLower.length - 1];
 
-    const checkStr = ['A', 'y', 'i', 'e', 'o', 'u', 'w'];
+    const checkStr = ['a', 'y', 'i', 'e', 'o', 'u', 'w'];
     let store = '';
     let count;
     for (let alpha = 0; alpha < checkStr.length; alpha++) {
@@ -24,4 +24,4 @@ function checkName(name) {
     return 'invalid';
   }
 }
-console.log(checkName(['Rashed']));
+console.log(checkName('Salmana'));

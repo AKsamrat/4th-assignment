@@ -2,25 +2,13 @@ function deleteInvalids(array) {
   if (Array.isArray(array)) {
     let store = [];
     for (let ele of array) {
-      if (typeof ele === 'number') {
+      if (typeof ele === 'number' && !isNaN(ele)) {
         store.push(ele);
       }
     }
-    return store.filter(Boolean);
+    return store;
   } else {
     return 'Enter a valid Input';
   }
 }
-console.log(
-  deleteInvalids([
-    1,
-    null,
-    undefined,
-    18,
-    -19,
-    NaN,
-    '12',
-    [1, 2],
-    { ob: 'lala' },
-  ])
-);
+console.log(deleteInvalids({ num: [1, 2, 3] }));

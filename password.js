@@ -13,4 +13,4 @@ function password(obj) {
     return 'invalid';
   }
 }
-console.log(password({ name: 'maisha', birthYear: 200, siteName: 'google' }));
+console.log(password({ name: 'maisha', birthYear: 2007, siteName: 'google' }));
